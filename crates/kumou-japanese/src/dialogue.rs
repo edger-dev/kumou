@@ -26,6 +26,16 @@ pub struct TopicSummary {
     pub dialogue_count: usize,
 }
 
+/// A paginated response of dialogues
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
+pub struct DialoguePage {
+    pub dialogues: Vec<Dialogue>,
+    pub total: usize,
+    pub page: usize,
+    pub per_page: usize,
+    pub total_pages: usize,
+}
+
 /// Load dialogues from a JSON string
 pub fn load_dialogues(json: &str) -> Result<Vec<Dialogue>, serde_json::Error> {
     serde_json::from_str(json)

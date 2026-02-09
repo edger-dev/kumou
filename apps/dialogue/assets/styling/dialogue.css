@@ -141,6 +141,125 @@
     margin: 4px 0;
 }
 
+/* Search bar */
+.search-bar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.search-input {
+    flex: 1;
+    background: #1e222d;
+    border: 1px solid #2d3348;
+    border-radius: 8px;
+    padding: 10px 16px;
+    color: #e2e8f0;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.search-input::placeholder {
+    color: #64748b;
+}
+
+.search-input:focus {
+    border-color: #6d85c6;
+}
+
+.search-btn {
+    background: #6d85c6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+}
+
+.search-btn:hover {
+    background: #5a72b3;
+}
+
+.search-clear-btn {
+    background: transparent;
+    color: #94a3b8;
+    border: 1px solid #2d3348;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.search-clear-btn:hover {
+    color: #e2e8f0;
+    border-color: #64748b;
+}
+
+.no-results {
+    color: #94a3b8;
+    text-align: center;
+    padding: 40px;
+    font-size: 1rem;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+.page-btn {
+    background: #1e222d;
+    color: #94a3b8;
+    border: 1px solid #2d3348;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    min-width: 36px;
+    text-align: center;
+}
+
+.page-btn:hover:not(:disabled) {
+    background: #252a38;
+    border-color: #6d85c6;
+    color: #e2e8f0;
+}
+
+.page-btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
+.page-btn-active {
+    background: #6d85c6;
+    color: #fff;
+    border-color: #6d85c6;
+}
+
+.page-btn-active:hover {
+    background: #5a72b3;
+}
+
+.page-info {
+    text-align: center;
+    color: #64748b;
+    font-size: 0.85rem;
+    margin-top: 8px;
+}
+
 /* Conversation view */
 .dialogue-conversation {
     display: flex;
