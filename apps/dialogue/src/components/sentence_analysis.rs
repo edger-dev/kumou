@@ -1,3 +1,4 @@
+use crate::components::SpeakButton;
 use crate::server_fns::analyze_sentence;
 use dioxus::prelude::*;
 use kumou_japanese::{pos_css_class, pos_english};
@@ -18,6 +19,7 @@ pub fn SentenceAnalysis(text: String) -> Element {
                     div { class: "analysis-original",
                         span { class: "label", "Original: " }
                         "{result.text}"
+                        SpeakButton { text: result.text.clone() }
                     }
 
                     div { class: "token-flow",
@@ -27,6 +29,7 @@ pub fn SentenceAnalysis(text: String) -> Element {
                                 div { class: "token-surface", "{token.surface}" }
                                 div { class: "token-reading", "{token.reading}" }
                                 div { class: "token-pos", "{pos_english(&token.pos.major)}" }
+                                SpeakButton { text: token.surface.clone(), small: true }
                             }
                         }
                     }
@@ -42,6 +45,7 @@ pub fn SentenceAnalysis(text: String) -> Element {
                                     th { "POS" }
                                     th { "POS Detail" }
                                     th { "Conjugation" }
+                                    th { "" }
                                 }
                             }
                             tbody {
@@ -71,6 +75,9 @@ pub fn SentenceAnalysis(text: String) -> Element {
                                             if token.conjugation_form != "*" {
                                                 span { class: "conj-form", " ({token.conjugation_form})" }
                                             }
+                                        }
+                                        td {
+                                            SpeakButton { text: token.surface.clone(), small: true }
                                         }
                                     }
                                 }
