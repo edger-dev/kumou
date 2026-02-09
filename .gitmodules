@@ -1,0 +1,3 @@
+[submodule "apps/dialogue/data/japanese-daily-dialogue"]
+	path = apps/dialogue/data/japanese-daily-dialogue
+	url = git@github.com:jqk09a/japanese-daily-dialogue.git
