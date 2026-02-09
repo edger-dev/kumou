@@ -1,9 +1,14 @@
+#[cfg(feature = "tokenizer")]
 use lindera::dictionary::{load_embedded_dictionary, DictionaryKind};
+#[cfg(feature = "tokenizer")]
 use lindera::mode::Mode;
+#[cfg(feature = "tokenizer")]
 use lindera::segmenter::Segmenter;
+#[cfg(feature = "tokenizer")]
 use lindera::tokenizer::Tokenizer;
 use serde::{Deserialize, Serialize};
 
+#[cfg(feature = "tokenizer")]
 use crate::error::AnalysisError;
 
 /// Part-of-speech information from IPADIC
@@ -48,6 +53,7 @@ pub struct AnalyzedSentence {
 }
 
 /// Create a lindera tokenizer with IPADIC dictionary
+#[cfg(feature = "tokenizer")]
 pub fn create_tokenizer() -> Result<Tokenizer, AnalysisError> {
     let dictionary = load_embedded_dictionary(DictionaryKind::IPADIC)
         .map_err(|e| AnalysisError::TokenizerInit(e.to_string()))?;
@@ -56,6 +62,7 @@ pub fn create_tokenizer() -> Result<Tokenizer, AnalysisError> {
 }
 
 /// Analyze a Japanese sentence into tokens with grammar details
+#[cfg(feature = "tokenizer")]
 pub fn analyze_sentence(
     tokenizer: &Tokenizer,
     text: &str,
