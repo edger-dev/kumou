@@ -9,7 +9,7 @@ repository.workspace = true
 authors.workspace = true
 
 [features]
-default = ["web", "server"]
+default = ["web", "server", "tokenizer"]
 web = ["dioxus/web"]
 server = ["dioxus/server"]
 tokenizer = ["kumou-japanese/tokenizer"]

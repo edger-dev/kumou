@@ -1,5 +1,8 @@
 project_root := justfile_directory()
 
+serve:
+    cd apps/dialogue && dx serve --addr 0.0.0.0
+
 build:
     cargo build
 
