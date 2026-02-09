@@ -1,5 +1,5 @@
 use crate::Route;
-use crate::components::SentenceAnalysis;
+use crate::components::{SentenceAnalysis, SpeakButton};
 use crate::server_fns::get_dialogue;
 use dioxus::prelude::*;
 use kumou_japanese::topic_name_ja;
@@ -38,20 +38,23 @@ pub fn DialogueDetail(dialogue_id: u32) -> Element {
                                     div { class: "speaker-label speaker-{utterance.speaker}",
                                         "Speaker {utterance.speaker}"
                                     }
-                                    p {
-                                        class: "utterance-text",
-                                        onclick: {
-                                            let text = utterance.utterance.clone();
-                                            move |_| {
-                                                let current = selected_sentence();
-                                                if current.as_deref() == Some(text.as_str()) {
-                                                    selected_sentence.set(None);
-                                                } else {
-                                                    selected_sentence.set(Some(text.clone()));
+                                    div { class: "utterance-content",
+                                        p {
+                                            class: "utterance-text",
+                                            onclick: {
+                                                let text = utterance.utterance.clone();
+                                                move |_| {
+                                                    let current = selected_sentence();
+                                                    if current.as_deref() == Some(text.as_str()) {
+                                                        selected_sentence.set(None);
+                                                    } else {
+                                                        selected_sentence.set(Some(text.clone()));
+                                                    }
                                                 }
-                                            }
-                                        },
-                                        "{utterance.utterance}"
+                                            },
+                                            "{utterance.utterance}"
+                                        }
+                                        SpeakButton { text: utterance.utterance.clone() }
                                     }
                                 }
                             }
