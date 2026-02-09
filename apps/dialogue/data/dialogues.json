@@ -1,0 +1,170 @@
+[
+  {
+    "topic_id": 1,
+    "topic_name": "Dailylife",
+    "dialogue_id": 1,
+    "dialogue_length": 4,
+    "utterances": [
+      {"turn_num": 1, "speaker": "A", "utterance": "おはようございます。今日はいい天気ですね。"},
+      {"turn_num": 2, "speaker": "B", "utterance": "おはようございます。本当にいい天気ですね。散歩に行きませんか。"},
+      {"turn_num": 3, "speaker": "A", "utterance": "いいですね。公園に行きましょう。"},
+      {"turn_num": 4, "speaker": "B", "utterance": "はい、行きましょう。"}
+    ]
+  },
+  {
+    "topic_id": 1,
+    "topic_name": "Dailylife",
+    "dialogue_id": 2,
+    "dialogue_length": 4,
+    "utterances": [
+      {"turn_num": 1, "speaker": "A", "utterance": "すみません、この近くにコンビニはありますか。"},
+      {"turn_num": 2, "speaker": "B", "utterance": "はい、あの角を右に曲がると、すぐ見えますよ。"},
+      {"turn_num": 3, "speaker": "A", "utterance": "ありがとうございます。歩いてどのくらいかかりますか。"},
+      {"turn_num": 4, "speaker": "B", "utterance": "五分くらいですよ。"}
+    ]
+  },
+  {
+    "topic_id": 1,
+    "topic_name": "Dailylife",
+    "dialogue_id": 3,
+    "dialogue_length": 4,
+    "utterances": [
+      {"turn_num": 1, "speaker": "A", "utterance": "今日の夕飯は何にしますか。"},
+      {"turn_num": 2, "speaker": "B", "utterance": "カレーを作ろうと思います。"},
+      {"turn_num": 3, "speaker": "A", "utterance": "いいですね。材料は買いましたか。"},
+      {"turn_num": 4, "speaker": "B", "utterance": "まだです。これからスーパーに行きます。"}
+    ]
+  },
+  {
+    "topic_id": 2,
+    "topic_name": "School",
+    "dialogue_id": 4,
+    "dialogue_length": 4,
+    "utterances": [
+      {"turn_num": 1, "speaker": "A", "utterance": "明日のテストの準備はできましたか。"},
+      {"turn_num": 2, "speaker": "B", "utterance": "まだ全然できていません。今夜は徹夜するつもりです。"},
+      {"turn_num": 3, "speaker": "A", "utterance": "大変ですね。一緒に勉強しましょうか。"},
+      {"turn_num": 4, "speaker": "B", "utterance": "本当ですか。助かります。図書館で会いましょう。"}
+    ]
+  },
+  {
+    "topic_id": 2,
+    "topic_name": "School",
+    "dialogue_id": 5,
+    "dialogue_length": 4,
+    "utterances": [
+      {"turn_num": 1, "speaker": "A", "utterance": "先生、この文法がよく分かりません。"},
+      {"turn_num": 2, "speaker": "B", "utterance": "どの部分が分からないですか。"},
+      {"turn_num": 3, "speaker": "A", "utterance": "「ている」と「てある」の違いです。"},
+      {"turn_num": 4, "speaker": "B", "utterance": "「ている」は動作の進行や状態を表します。「てある」は結果の状態を表します。"}
+    ]
+  },
+  {
+    "topic_id": 2,
+    "topic_name": "School",
+    "dialogue_id": 6,
+    "dialogue_length": 4,
+    "utterances": [
+      {"turn_num": 1, "speaker": "A", "utterance": "新しいクラスはどうですか。"},
+      {"turn_num": 2, "speaker": "B", "utterance": "みんな優しくて、楽しいです。"},
+      {"turn_num": 3, "speaker": "A", "utterance": "よかったですね。友達はできましたか。"},
+      {"turn_num": 4, "speaker": "B", "utterance": "はい、もう何人かと仲良くなりました。"}
+    ]
+  },
+  {
+    "topic_id": 3,
+    "topic_name": "Travel",
+    "dialogue_id": 7,
+    "dialogue_length": 4,
+    "utterances": [
+      {"turn_num": 1, "speaker": "A", "utterance": "来月、京都に旅行に行く予定です。"},
+      {"turn_num": 2, "speaker": "B", "utterance": "いいですね。京都は何回目ですか。"},
+      {"turn_num": 3, "speaker": "A", "utterance": "初めてです。おすすめの場所はありますか。"},
+      {"turn_num": 4, "speaker": "B", "utterance": "金閣寺と嵐山がおすすめです。紅葉がきれいですよ。"}
+    ]
+  },
+  {
+    "topic_id": 3,
+    "topic_name": "Travel",
+    "dialogue_id": 8,
+    "dialogue_length": 4,
+    "utterances": [
+      {"turn_num": 1, "speaker": "A", "utterance": "すみません、東京駅まではどう行けばいいですか。"},
+      {"turn_num": 2, "speaker": "B", "utterance": "この電車に乗って、三つ目の駅で乗り換えてください。"},
+      {"turn_num": 3, "speaker": "A", "utterance": "乗り換えは何線ですか。"},
+      {"turn_num": 4, "speaker": "B", "utterance": "中央線に乗り換えてください。東京駅まで十五分くらいです。"}
+    ]
+  },
+  {
+    "topic_id": 3,
+    "topic_name": "Travel",
+    "dialogue_id": 9,
+    "dialogue_length": 4,
+    "utterances": [
+      {"turn_num": 1, "speaker": "A", "utterance": "ホテルの予約はもうしましたか。"},
+      {"turn_num": 2, "speaker": "B", "utterance": "はい、駅の近くのホテルを予約しました。"},
+      {"turn_num": 3, "speaker": "A", "utterance": "一泊いくらですか。"},
+      {"turn_num": 4, "speaker": "B", "utterance": "一泊八千円です。朝食付きですよ。"}
+    ]
+  },
+  {
+    "topic_id": 4,
+    "topic_name": "Health",
+    "dialogue_id": 10,
+    "dialogue_length": 4,
+    "utterances": [
+      {"turn_num": 1, "speaker": "A", "utterance": "最近、体の調子が悪いんです。"},
+      {"turn_num": 2, "speaker": "B", "utterance": "どうしましたか。具体的にどこが悪いですか。"},
+      {"turn_num": 3, "speaker": "A", "utterance": "頭が痛くて、熱もあります。"},
+      {"turn_num": 4, "speaker": "B", "utterance": "風邪かもしれませんね。早めに病院に行った方がいいですよ。"}
+    ]
+  },
+  {
+    "topic_id": 4,
+    "topic_name": "Health",
+    "dialogue_id": 11,
+    "dialogue_length": 4,
+    "utterances": [
+      {"turn_num": 1, "speaker": "A", "utterance": "毎日運動していますか。"},
+      {"turn_num": 2, "speaker": "B", "utterance": "はい、朝にジョギングをしています。"},
+      {"turn_num": 3, "speaker": "A", "utterance": "どのくらい走りますか。"},
+      {"turn_num": 4, "speaker": "B", "utterance": "三十分くらいです。健康のために続けています。"}
+    ]
+  },
+  {
+    "topic_id": 5,
+    "topic_name": "Entertainment",
+    "dialogue_id": 12,
+    "dialogue_length": 4,
+    "utterances": [
+      {"turn_num": 1, "speaker": "A", "utterance": "週末に映画を見に行きませんか。"},
+      {"turn_num": 2, "speaker": "B", "utterance": "いいですね。何の映画が見たいですか。"},
+      {"turn_num": 3, "speaker": "A", "utterance": "新しいアニメ映画が面白そうです。"},
+      {"turn_num": 4, "speaker": "B", "utterance": "いいですね。じゃあ、土曜日の午後に行きましょう。"}
+    ]
+  },
+  {
+    "topic_id": 5,
+    "topic_name": "Entertainment",
+    "dialogue_id": 13,
+    "dialogue_length": 4,
+    "utterances": [
+      {"turn_num": 1, "speaker": "A", "utterance": "最近、面白い本を読みましたか。"},
+      {"turn_num": 2, "speaker": "B", "utterance": "はい、村上春樹の新しい小説を読みました。"},
+      {"turn_num": 3, "speaker": "A", "utterance": "どんな話ですか。"},
+      {"turn_num": 4, "speaker": "B", "utterance": "不思議な世界を旅する話です。とても面白いですよ。"}
+    ]
+  },
+  {
+    "topic_id": 5,
+    "topic_name": "Entertainment",
+    "dialogue_id": 14,
+    "dialogue_length": 4,
+    "utterances": [
+      {"turn_num": 1, "speaker": "A", "utterance": "音楽は何が好きですか。"},
+      {"turn_num": 2, "speaker": "B", "utterance": "日本のポップスが好きです。特に米津玄師が好きです。"},
+      {"turn_num": 3, "speaker": "A", "utterance": "私も好きです。コンサートに行ったことがありますか。"},
+      {"turn_num": 4, "speaker": "B", "utterance": "一度だけあります。すごく感動しました。"}
+    ]
+  }
+]
