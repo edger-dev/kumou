@@ -94,7 +94,7 @@ pub fn SentenceAnalysis(text: String) -> Element {
     let analysis = use_server_future(move || {
         let text = text.clone();
         async move { analyze_sentence(text).await }
-    })?;
+    });
 
     let mut speaking_token_idx = use_signal(|| None::<usize>);
 
