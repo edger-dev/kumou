@@ -553,3 +553,61 @@
 .token-chip .speak-btn-small {
     margin-top: 4px;
 }
+
+/* Speaking highlight animation for token chips */
+@keyframes speaking-glow {
+    0% {
+        box-shadow: 0 0 4px rgba(251, 191, 36, 0.3), 0 0 8px rgba(251, 191, 36, 0.1);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 12px rgba(251, 191, 36, 0.5), 0 0 24px rgba(251, 191, 36, 0.2);
+        transform: scale(1.06);
+    }
+    100% {
+        box-shadow: 0 0 4px rgba(251, 191, 36, 0.3), 0 0 8px rgba(251, 191, 36, 0.1);
+        transform: scale(1);
+    }
+}
+
+.token-chip.speaking {
+    border-color: #fbbf24;
+    background: #2a2210 !important;
+    animation: speaking-glow 0.8s ease-in-out infinite;
+    z-index: 1;
+    position: relative;
+}
+
+.token-chip.speaking .token-surface {
+    color: #fbbf24;
+    text-shadow: 0 0 8px rgba(251, 191, 36, 0.4);
+}
+
+/* Speaking highlight animation for table rows */
+@keyframes speaking-row-flash {
+    0% { background: rgba(251, 191, 36, 0.05); }
+    50% { background: rgba(251, 191, 36, 0.12); }
+    100% { background: rgba(251, 191, 36, 0.05); }
+}
+
+.token-table tr.speaking td {
+    animation: speaking-row-flash 0.8s ease-in-out infinite;
+    border-bottom-color: rgba(251, 191, 36, 0.3);
+}
+
+.token-table tr.speaking .surface-cell {
+    color: #fbbf24;
+    text-shadow: 0 0 6px rgba(251, 191, 36, 0.3);
+}
+
+/* Speaking-active button pulse */
+@keyframes btn-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.4); }
+    50% { box-shadow: 0 0 0 6px rgba(251, 191, 36, 0); }
+}
+
+.speak-btn.speaking-active {
+    color: #fbbf24;
+    border-color: #fbbf24;
+    animation: btn-pulse 1.2s ease-in-out infinite;
+}
